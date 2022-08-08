@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FORM VALIDATION</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+<h1>REGISTRATION FORM</h1>
+<div>
+<form name="validform" method="post" onsubmit="return validateForm()">
+<label for="fname">First Name</label><br/>
+<input type="text" id="fname" name="firstname" placeholder="Enter First Name"><br/>
+<label for="lname">Last Name</label><br/>
+<input type="text" id="lname" name="lastname" placeholder="Enter Last Name"><br/>
+<label for="phone">Phone No. </label><br/>
+<input type="number" id="phone" name="phone" placeholder="Enter Phone No."><br/>
+<label for="Email">Email Id </label><br/>
+<input type="Email" id="Email" name="email" placeholder="Enter Email Id"><br/>
+
+<label for="password1">password</label><br/>
+<input type="Password" id="password1" name="password" placeholder="Enter Password"><br/>
+
+<label for="passwordC">password</label><br/>
+<input type="Password" id="passwordC" name="passwordC" placeholder="Confirm Password"><br/>
+
+<label>Gender</label><br/>
+<input type="radio" id="male" value="male" name="gender">
+<label for="male">Male</label>
+<input type="radio" id="female" value="female" name="gender">
+<label for="female">Female</label><br/>
+<label for="country">Country</label>
+<select name="country" id="country" required>
+<option value="india">India</option>
+<option value="usa">USA</option>
+<option value="japan">Japan</option>
+<!-- </select> -->
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
